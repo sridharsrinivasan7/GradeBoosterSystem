@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllerclasses.ProfController">
+   <children>
+      <AnchorPane layoutX="-243.0" layoutY="-71.0" prefHeight="906.0" prefWidth="1326.0">
+         <children>
+            <Button fx:id="Waitlisted" layoutX="488.0" layoutY="330.0" mnemonicParsing="false" onAction="#Waitlisted" prefHeight="31.0" prefWidth="256.0" text="WAITLISTED" />
+            <Button fx:id="Registered" layoutX="816.0" layoutY="330.0" mnemonicParsing="false" onAction="#Registered" prefHeight="31.0" prefWidth="256.0" text="REGISTERED" />
+            <Button fx:id="logout" layoutX="647.0" layoutY="665.0" mnemonicParsing="false" onAction="#Logout" prefHeight="31.0" prefWidth="256.0" text="LOGOUT" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

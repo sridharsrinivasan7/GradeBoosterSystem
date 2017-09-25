@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllerclasses.AdminController">
+   <children>
+      <AnchorPane layoutX="-243.0" layoutY="-71.0" prefHeight="906.0" prefWidth="1326.0">
+         <children>
+            <Button fx:id="grantacc" layoutX="512.0" layoutY="672.0" mnemonicParsing="false" onAction="#GrantAccess" prefHeight="53.0" prefWidth="149.0" text="GRANT ACCESS" />
+            <Button fx:id="revokeacc" layoutX="701.0" layoutY="672.0" mnemonicParsing="false" onAction="#RevokeAccess" prefHeight="53.0" prefWidth="149.0" text="REVOKE ACCESS" />
+            <TableView fx:id="tableview" layoutX="411.0" layoutY="218.0" prefHeight="438.0" prefWidth="731.0">
+              <columns>
+                <TableColumn fx:id="coluserid" prefWidth="156.0" text="UID" />
+                <TableColumn fx:id="colname" prefWidth="208.0" text="NAME" />
+                  <TableColumn fx:id="colistype" prefWidth="181.0" text="IsTYPE" />
+                  <TableColumn fx:id="colas" prefWidth="185.0" text="ACCESS STATUS" />
+              </columns>
+            </TableView>
+            <Label fx:id="L1" layoutX="553.0" layoutY="783.0" prefHeight="59.0" prefWidth="434.0" textFill="#d00909">
+               <font>
+                  <Font size="28.0" />
+               </font></Label>
+            <Button fx:id="delacc" layoutX="882.0" layoutY="672.0" mnemonicParsing="false" onAction="#onClickDeleteUserAccount" prefHeight="53.0" prefWidth="149.0" text="DELETE ACCOUNT" />
+            <Button fx:id="backbtn" layoutX="1158.0" layoutY="112.0" mnemonicParsing="false" onAction="#Signout" prefHeight="53.0" prefWidth="132.0" text="SIGN OUT" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

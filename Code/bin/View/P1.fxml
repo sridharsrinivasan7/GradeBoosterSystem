@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllerclasses.LoginController">
+   <children>
+      <AnchorPane layoutX="-253.0" layoutY="-81.0" prefHeight="906.0" prefWidth="1326.0">
+         <children>
+            <RadioButton fx:id="radmin" layoutX="641.0" layoutY="575.0" mnemonicParsing="false" text="Admin" />
+            <RadioButton fx:id="rprofessor" layoutX="757.0" layoutY="575.0" mnemonicParsing="false" text="Professor" />
+            <RadioButton fx:id="rstudent" layoutX="872.0" layoutY="575.0" mnemonicParsing="false" text="Student" />
+            <PasswordField fx:id="PWD" layoutX="775.0" layoutY="506.0" prefHeight="31.0" prefWidth="194.0" />
+            <TextField fx:id="UID" layoutX="775.0" layoutY="438.0" prefHeight="31.0" prefWidth="194.0" />
+            <Button fx:id="registration" layoutX="312.0" layoutY="778.0" mnemonicParsing="false" onAction="#Register" prefHeight="31.0" prefWidth="121.0" text="NEW STUDENT" />
+            <Button fx:id="login" layoutX="621.0" layoutY="637.0" mnemonicParsing="false" onAction="#LoginMethod" prefHeight="31.0" prefWidth="135.0" text="LOGIN" />
+            <Label layoutX="595.0" layoutY="438.0" prefHeight="31.0" prefWidth="162.0" text="        USERID" />
+            <Label layoutX="595.0" layoutY="506.0" prefHeight="31.0" prefWidth="162.0" text="        PASSWORD" />
+            <Label layoutX="444.0" layoutY="261.0" prefHeight="120.0" prefWidth="675.0" text="           Illinois Institute of Technology" textFill="#da2110">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Button fx:id="abort" layoutX="833.0" layoutY="637.0" mnemonicParsing="false" onAction="#Exit" prefHeight="31.0" prefWidth="135.0" text="EXIT" />
+            <Label layoutX="473.0" layoutY="780.0" prefHeight="27.0" prefWidth="145.0" text="Not a Member...?" textFill="#650e0e">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="rwarning" layoutX="339.0" layoutY="575.0" prefHeight="21.0" prefWidth="268.0" textFill="#0963eb" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
